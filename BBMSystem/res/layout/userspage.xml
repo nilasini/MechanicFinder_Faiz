@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/donor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b_makerequest"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/sample"
+        android:text="Mechanic"
+        android:textColor="#E8E8E8"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/b_makerequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/donor"
+        android:layout_centerVertical="true"
+        android:background="@drawable/sample"
+        android:text="Customer"
+        android:textColor="#E8E8E8"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/b_makerequest"
+        android:layout_below="@+id/b_makerequest"
+        android:layout_marginTop="33dp"
+        android:background="@drawable/sample"
+        android:text="Admin"
+        android:textColor="#E8E8E8"
+        android:textStyle="bold" />
+
+</RelativeLayout>

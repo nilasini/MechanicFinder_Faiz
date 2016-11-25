@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark" >
+
+     <Button
+         android:id="@+id/ad_dd"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:background="@drawable/sample"
+         android:onClick="viewDonor"
+         android:text="mechanic details"
+         android:textColor="#E8E8E8"
+         android:textSize="20dp"
+         android:textStyle="bold" />
+
+     <Button
+         android:id="@+id/ad_ud"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/ad_dd"
+         android:layout_alignLeft="@+id/ad_dd"
+         android:layout_marginBottom="17dp"
+         android:background="@drawable/sample"
+         android:text="update details"
+         android:onClick="updateDonor"
+         android:textColor="#E8E8E8"
+         android:textSize="20dp"
+         android:textStyle="bold" />
+
+     <Button
+         android:id="@+id/orgadd"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/ad_ud"
+         android:layout_alignLeft="@+id/ad_ud"
+         android:layout_marginBottom="20dp"
+         android:background="@drawable/sample"
+         android:onClick="addOrg"
+         android:text="add customers"
+         android:textColor="#E8E8E8"
+         android:textSize="20dp"
+         android:textStyle="bold" />
+
+     <Button
+         android:id="@+id/exit"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/ad_dd"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="26dp"
+          android:onClick="exit"
+         android:background="@drawable/sample2"
+        
+         android:textSize="20dp"
+         android:textStyle="bold"
+         android:text="exit" />
+    
+</RelativeLayout>

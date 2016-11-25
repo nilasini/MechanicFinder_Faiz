@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark" >
+
+     <TextView
+         android:id="@+id/textView3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="40dp"
+         android:text="Mechanic Update"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:textColor="#E8E8E8"
+         android:textSize="30dp"
+         android:textStyle="bold" />
+
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="63dp"
+         android:background="@drawable/sample"
+         android:onClick="click"
+         android:text="enter"
+         android:textColor="#E8E8E8" />
+
+     <EditText
+         android:id="@+id/d_contactdetail"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/textView1"
+         android:layout_alignBottom="@+id/textView1"
+         android:layout_alignLeft="@+id/button1"
+         android:layout_alignParentRight="true"
+         android:background="@drawable/backgrnd"
+         android:ems="10"
+         android:inputType="textPersonName"
+         android:textAlignment="center"
+         android:textColor="#000000" />
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/textView1"
+         android:layout_centerVertical="true"
+         android:text="password"
+         android:textColor="#E8E8E8"
+         android:textSize="25dp" />
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="250dp"
+         android:layout_height="75dp"
+         android:layout_above="@+id/textView2"
+         android:layout_alignRight="@+id/textView3"
+         android:text="username"
+         android:textAlignment="center"
+         android:textColor="#E8E8E8"
+         android:textSize="25dp" />
+
+      <EditText
+          android:id="@+id/pass"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignBottom="@+id/textView2"
+          android:layout_alignLeft="@+id/d_contactdetail"
+          android:layout_alignParentRight="true"
+          android:layout_below="@+id/textView1"
+          android:background="@drawable/backgrnd"
+          android:ems="10"
+          android:inputType="textPersonName"
+          android:textAlignment="center"
+          android:textColor="#000000" >
+
+          <requestFocus />
+      </EditText>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#000000"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+     <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+                            
+                            <TextView
+                                android:id="@+id/nearby_location"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="location"
+                                android:textColor="#4aa5d4"
+                                android:textStyle="bold"
+                                android:textSize="20dp" />
+
+                             <TextView
+                                 android:id="@+id/nearby_phonenum"
+                                 android:layout_weight="1"
+                                 android:gravity="center"
+                                 android:text="contact"
+                                 android:textColor="#4aa5d4"
+                                 android:textStyle="bold"
+                                 android:textSize="20dp" />
+                           
+                             <TextView
+                                 android:id="@+id/nearby_name"
+                                 android:layout_weight="1"
+                                 android:gravity="center"
+                                 android:text="username"
+                                 android:textColor="#4aa5d4"
+                                 android:textStyle="bold"
+                                 android:textSize="20dp" />
+                             
+                        </TableRow>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="150dp"
+        android:layout_height="250dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="2dp" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/sendsms"
+        android:layout_width="25dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/sample"
+        android:text="Send request"
+        android:textColor="#E8E8E8" />
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:onClick="exit"
+        android:text="exit" />
+    
+     </TableLayout>
+
+     
+    
+</RelativeLayout>

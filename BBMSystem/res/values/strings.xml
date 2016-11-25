@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Faiz</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="select">Choose a blood group</string>
+    <string name="select2">Choose an item</string>
+    <string name="button_label">Submit</string>
+
+    <string-array name="bloodgroup_array">
+        <item>select a vehivle type</item>
+        <item> bus </item>
+        <item>car</item>
+        <item>bicycle</item>
+        <item> auto</item>
+    </string-array>
+
+    <string name="available1">Choose</string>
+    <string name="available2">Choose availability</string>
+    <string name="button_label1">Submit</string>
+
+    <string-array name="available_array">
+        <item>select availability</item>
+        <item> yes </item>
+        <item>No</item>
+    </string-array>
+    
+    <string name="location11">Choose</string>
+    <string name="location22">Choose availability</string>
+    <string name="button_label2">Submit</string>
+
+    <string-array name="location_array">
+        <item>select location</item>
+        <item> Jaffna,Srilanka </item>
+        <item>Nallur,Srilanka</item>
+        <item >Chavakacheri,Srilanka</item>
+        <item >Chunnakam,Srilanka</item>
+    </string-array>
+
+</resources>

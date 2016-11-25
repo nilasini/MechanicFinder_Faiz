@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/pwd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignLeft="@+id/phonenumber1"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/backgrnd"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="#E8E8E8" />
+
+    <EditText
+        android:id="@+id/username1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/backgrnd"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#E8E8E8" />
+
+    <EditText
+        android:id="@+id/mail_id1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignLeft="@+id/username1"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/backgrnd"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="#E8E8E8" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/code1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/pwd1"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/backgrnd"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#E8E8E8" />
+
+    <EditText
+        android:id="@+id/org_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/pwd1"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/backgrnd"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#E8E8E8" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_marginBottom="14dp"
+        android:text="contact number"
+        android:textColor="#E8E8E8"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/phonenumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/backgrnd"
+        android:ems="10"
+        android:inputType="phone"
+        android:textColor="#E8E8E8" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView5"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_marginBottom="17dp"
+        android:text="username"
+        android:textColor="#E8E8E8"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/varify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/register1"
+        android:layout_alignBottom="@+id/register1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="21dp"
+        android:background="@drawable/sample"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Varify"
+        android:textStyle="bold"
+        android:textColor="#E8E8E8" />
+
+    <Button
+        android:id="@+id/register1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="29dp"
+        android:layout_marginLeft="21dp"
+        android:background="@drawable/sample"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Register"
+        android:textStyle="bold"
+        android:textColor="#E8E8E8" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/register1"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_marginBottom="20dp"
+        android:text="email_id"
+        android:textColor="#E8E8E8"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginBottom="20dp"
+        android:layout_toLeftOf="@+id/org_name1"
+        android:text="customer name"
+        android:textColor="#E8E8E8"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="14dp"
+        android:text="password"
+        android:textColor="#E8E8E8"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pwd1"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_marginBottom="17dp"
+        android:text="code"
+        android:textColor="#E8E8E8"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/code1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:text="Customer Registration"
+        android:textColor="#E8E8E8"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

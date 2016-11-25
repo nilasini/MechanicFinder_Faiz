@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark" >
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/donor_register"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="17dp"
+        android:text="Available Now"
+        android:textColor="#E8E8E8"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/donor_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/sample"
+        android:onClick="update"
+        android:text="update"
+        android:textColor="#E8E8E8"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/avail_lu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="42dp"
+        android:text="Available location"
+        android:textColor="#E8E8E8"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_marginLeft="26dp"
+        android:layout_toRightOf="@+id/avail_lu"
+        android:background="@drawable/sample2"
+        android:onClick="close"
+        android:text="exit"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/d_firstnameu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/backgrnd"
+        android:ems="10"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/d_firstnameu"
+        android:layout_alignParentLeft="true"
+        android:text="first name"
+        android:textColor="#E8E8E8"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/avail_lu"
+        android:background="@drawable/backgrnd"
+        android:ems="10"
+        android:inputType="phone"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/avail_lu"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="32dp"
+        android:text="vehicle type"
+        android:textColor="#E8E8E8"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/avln"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/avail_lu"
+        android:layout_alignBottom="@+id/avail_lu"
+        android:layout_alignLeft="@+id/status"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/backgrnd"
+        android:ems="10"
+        android:inputType="phone"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/phone_numu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView8"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/backgrnd"
+        android:ems="10"
+        android:inputType="phone"
+        android:textColor="#000000" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/blgr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/avail_lu"
+        android:background="@drawable/backgrnd"
+        android:ems="10"
+        android:inputType="phone"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/d_firstnameu"
+        android:layout_marginTop="47dp"
+        android:text="Contact number"
+        android:textColor="#E8E8E8"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/donor_register"
+        android:layout_alignParentTop="true"
+        android:text="Update details"
+        android:textColor="#E8E8E8"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

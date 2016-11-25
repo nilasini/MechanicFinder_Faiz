@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dark" >
+
+    <Spinner
+        android:id="@+id/d_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/d_Available"
+        android:layout_alignLeft="@+id/d_bloodgroup"
+        android:layout_alignParentRight="true"
+        android:entries="@array/location_array"
+        android:prompt="@string/location11"
+        android:textColor="#E8E8E8" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/d_location"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_marginBottom="15dp"
+        android:text="Available location"
+        android:textColor="#E8E8E8"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/d_bloodgroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/d_location"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textView5"
+        android:entries="@array/bloodgroup_array"
+        android:prompt="@string/select" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_marginBottom="24dp"
+        android:text="Contact number"
+        android:textColor="#E8E8E8"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/d_bloodgroup"
+        android:text="Vehicle type"
+        android:textColor="#E8E8E8"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/donor_register"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="17dp"
+        android:text="Available Now"
+        android:textColor="#E8E8E8"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/d_Available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/donor_register"
+        android:layout_alignLeft="@+id/d_location"
+        android:layout_alignParentRight="true"
+        android:entries="@array/available_array"
+        android:prompt="@string/available1"
+        android:textColor="#E8E8E8" />
+
+    <EditText
+        android:id="@+id/d_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/d_age"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/backgrnd"
+        android:ems="10"
+        android:textColor="#000000" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/d_firstname"
+        android:text="first name"
+        android:textColor="#E8E8E8"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/phone_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/backgrnd"
+        android:ems="10"
+        android:inputType="phone"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/d_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/backgrnd"
+        android:ems="10"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView8"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="17dp"
+        android:text="Age"
+        android:textColor="#E8E8E8"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Mechanic Registration"
+        android:textColor="#E8E8E8"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/donor_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/sample"
+        android:text="Register"
+        android:textColor="#E8E8E8"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_below="@+id/d_Available"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/sample2"
+        android:onClick="close"
+        android:text="exit"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

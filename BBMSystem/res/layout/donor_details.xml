@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shrinkColumns="*"  android:stretchColumns="*" android:background="#000000">
+     <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+
+         <TextView
+             android:id="@+id/donor_bg"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="Vehicle_type"
+             android:textColor="#4aa5d4"
+             android:textSize="20dp"
+             android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/donor_l"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Location"
+                                android:textColor="#4aa5d4"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/donor_n"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="Name"
+                                android:textColor="#4aa5d4"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+                             
+                        </TableRow>
+    <ListView
+        android:id="@android:id/list"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </ListView>
+     </TableLayout> 
+</RelativeLayout>

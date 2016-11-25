@@ -1,0 +1,45 @@
+<TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shrinkColumns="*"  android:stretchColumns="*" android:background="#000000">
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent">
+                            <TextView
+                                android:id="@+id/avai_bg" 
+                                android:layout_weight="1"  
+                                android:width="30dp"
+                                android:textColor="#ffffff"                                
+                                 android:gravity="center"/>
+                            <TextView
+                                android:id="@+id/avai_location" 
+                                android:layout_weight="2"  
+                                android:width="30dp"
+                                android:textColor="#ffffff" 
+                                 android:gravity="center"/>
+                           
+                             <TextView
+                                android:id="@+id/avai_dname" 
+                                android:layout_weight="2"  
+                                 android:width="30dp"
+                                android:textColor="#ffffff" 
+                                android:gravity="center"/>   
+                                <TextView
+                                android:id="@+id/p_num" 
+                                android:layout_weight="2"  
+                                 android:width="30dp"
+                                android:textColor="#ffffff" 
+                                android:gravity="center"/>   
+                                
+                              <TextView
+                                android:id="@+id/avai_distance" 
+                                android:layout_weight="2"  
+                                 android:width="30dp"
+                                android:textColor="#ffffff" 
+                                android:gravity="center"/> 
+                             
+                        </TableRow>
+
+      </TableLayout>
